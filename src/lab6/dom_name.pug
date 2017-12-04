@@ -1,0 +1,33 @@
+extends template
+
+block content
+    main
+        .controls
+            button#format Формат
+            button#cancel Отменить
+        h1(onmouseover="this.style.color = 'red';") Загаловок
+        .papers
+            p Did shy say mention enabled through elderly improve. As at so believe account evening behaved hearted is. House is tiled we aware. It ye greatest removing concerns an overcame appetite. Manner result square father boy behind its his. Their above spoke match ye mr right oh as first. Be my depending to believing perfectly concealed household. Point could to built no hours smile sense.
+            p Travelling alteration impression six all uncommonly. Chamber hearing inhabit joy highest private ask him our believe. Up nature valley do warmly. Entered of cordial do on no hearted. Yet agreed whence and unable limits. Use off him gay abilities concluded immediate allowance.
+            p Now for manners use has company believe parlors. Least nor party who wrote while did. Excuse formed as is agreed admire so on result parish. Put use set uncommonly announcing and travelling. Allowance sweetness direction to as necessary. Principle oh explained excellent do my suspected conveying in. Excellent you did therefore perfectly supposing described.
+        table
+            tr
+                td 00
+                td.gray 01
+                td 02
+            tr
+                td.gray 10
+                td 11
+                td.gray 12
+            tr
+                td 20
+                td.gray 21
+                td 22
+        .buttons
+            button#invisible.first Невидимый
+            button#visible.second Видимый
+            button#switch.third Поменять местами
+        .images
+            img(src=require("./1.jpeg")).first
+            img(src=require("./2.jpeg")).second
+            img(src=require("./3.jpeg")).third

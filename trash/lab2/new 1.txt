@@ -1,0 +1,63 @@
+<table>
+			<tr>
+				<td>
+					<table width="590" height="200" cellpadding="5" cellspacing="0" >
+						<thead>
+							<tr>
+								<th> <font color="white"> Наименование дисциплинны </font></th>
+								<th><font color="white"> Наименование дисциплинны </font></th>
+								<th> <font color="white"> Наименование дисциплинны </font></th>
+							</tr>
+						</thead>
+
+						<tr>
+							<td> <font color="white"> Наименование дисциплинны </font></td>
+							<td> <font color="white"> Наименование дисциплинны </font> </td>
+							<td> <font color="white"> Наименование дисциплинны </font></td>
+						</tr>
+				
+						<tr>
+							<td><font color="white"> Наименование дисциплинны </font></td>
+							<td> <font color="white"> Наименование дисциплинны </font> </td>
+							<td> <font color="white"> Наименование дисциплинны </font> </td>
+						</tr>
+				
+						<tr>
+							<td> <font color="white"> Наименование дисциплинны </font> </td>
+							<td> <font color="white"> Наименование дисциплинны </font></td>
+							<td> <font color="white"> Наименование дисциплинны </font> </td>
+						</tr>
+</table>
+
+
+
+
+<table border="1" width="590" height="200" cellpadding="5" cellspacing="0">
+						<caption> Учебный план для специальности 200900 - Сети связи и системы коммутации </caption>
+						<thead>
+							<tr>
+								<th> Наименование дисциплинны </th>
+								<th> Кол-во семестров </th>
+								<th> Семестр </th>
+							</tr>
+						</thead>
+
+						<tr>
+							<td> Программирование на языказ высокого уровня </td>
+							<td> 2 </td>
+							<td> 1,2 </td>
+						</tr>
+				
+						<tr>
+							<td> Информатика </td>
+							<td> 1 </td>
+							<td> 1 </td>
+						</tr>
+				
+						<tr>
+							<td> Базы данных </td>
+							<td> 1 </td>
+							<td> 6 </td>
+						</tr>
+					</table>
+

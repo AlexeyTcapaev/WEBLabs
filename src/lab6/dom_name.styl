@@ -1,0 +1,67 @@
+@import "template.styl"
+
+main
+  width 100%
+  display flex
+  flex-direction column
+  align-items center
+  padding-top 2rem
+
+  .controls
+    margin-right 0
+    display flex
+    flex-direction row
+
+  .papers
+    display flex
+    flex-direction column
+    align-items center
+    p
+      border 1px solid #c2c2c2
+      max-width 60%
+      &.first
+        padding 1rem
+        font-style italic
+        font-weight bold
+      &.second
+        line-height 1.5
+        margin-top 1.5em
+        text-indent 2.5em
+      &.third
+        position relative
+        top -3rem
+        background-color #797979
+        color blue
+        max-width 30%
+
+  table
+    margin 2rem auto
+    td
+      margin 1rem
+      padding 2rem
+    td.gray
+      background-color gray
+
+  .images
+    position relative
+    top 2rem
+    left -5rem
+    img
+      position absolute
+      height 5rem
+      width 10rem
+      &.first
+        z-index 1
+      &.second
+        top 3rem
+        left 3rem
+        z-index 2
+      &.third
+        top 6rem
+        left 6rem
+        z-index 3
+
+  .buttons
+    display flex
+    flex-direction row
+    justify-content space-around

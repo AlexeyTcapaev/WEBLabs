@@ -1,0 +1,31 @@
+{
+  "folders": {
+    "lab2": [
+      "table1",
+      "table2",
+      "table3"
+    ],
+    "lab4": [
+      "first",
+      "header",
+      "links",
+      "page-1",
+      "page-2",
+      "page-3",
+      "second",
+      "links-top",
+      "menu-1",
+      "menu-2",
+      "menu-3"
+    ],
+    "lab5": [
+      "form1",
+      "form2",
+      "form3"
+    ],
+    "lab6": [
+      "bom_name",
+      "dom_name"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+extends template
+
+block content
+    include menu
+    +menu()
+    -
+        data =
+            {
+                id: "200900",
+                title: "Учебный план для специальности 200900 – Сети связи и системы коммутации",
+                rows: [
+                    [
+                        "Информатика",
+                        "2",
+                        "1,2"
+                    ],
+                    [
+                        "Введение в специальность",
+                        "1",
+                        "2"
+                    ],
+                    [
+                        "Вычислительная техника",
+                        "2",
+                        "5,6"
+                    ]
+                ]
+            }
+
+    mixin group(data)
+        .group(id=data.id)
+            h3= data.title
+            table
+                tr
+                    th Наименование дисциплины
+                    th Кол-во семестров
+                    th Семестр
+                each row in data.rows
+                    tr
+                        each item in row
+                            td= item
+
+    .groups-wrapper
+        .row.row1
+            +group(data)
+        .row.row2
+            +group(data)
+        .row.row3
+            +group(data)
+            +group(data)
+        .row.row4
+            +group(data)

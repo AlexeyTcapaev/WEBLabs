@@ -1,0 +1,104 @@
+extends template
+
+block content
+    include menu
+    +menu()
+    -
+        groupsData = [
+            {
+                id: "200900",
+                title: "Учебный план для специальности 200900 – Сети связи и системы коммутации",
+                rows: [
+                    [
+                        "Информатика",
+                        "2",
+                        "1,2"
+                    ],
+                    [
+                        "Введение в специальность",
+                        "1",
+                        "2"
+                    ],
+                    [
+                        "Вычислительная техника",
+                        "2",
+                        "5,6"
+                    ]
+                ]
+            },
+            {
+                id: "220400",
+                title: "Учебный план для специальности 220400 – Программное обеспечение ВТ и АС",
+                rows: [
+                    [
+                        "Программирование на языках высокого уровня",
+                        "2",
+                        "1,2"
+                    ],
+                    [
+                        "Информатика",
+                        "1",
+                        "1"
+                    ],
+                    [
+                        "Информационные технологии в управлении",
+                        "2",
+                        "5,6"
+                    ]
+                ]
+            },
+            {
+                id: "220200",
+                title: "Учебный план для специальности 220200 – Автоматизированные системы обработки информации и управления",
+                rows: [
+                    [
+                        "Программирование на языках высокого уровня",
+                        "2",
+                        "1,2"
+                    ],
+                    [
+                        "Информатика",
+                        "1",
+                        "1"
+                    ],
+                    [
+                        "Базы данных",
+                        "1",
+                        "6"
+                    ]
+                ]
+            }
+        ]
+
+    mixin group(data)
+        .group(id=data.id)
+            h3= data.title
+            table
+                tr
+                    th Наименование дисциплины
+                    th Кол-во семестров
+                    th Семестр
+                each row in data.rows
+                    tr
+                        each item in row
+                            td= item
+
+    mixin groups(groupsData)
+        .groups
+            each data in groupsData
+                +group(data)
+
+    mixin links(groupsData)
+        .links
+            h2 Учебные планы
+            ul
+                each data in groupsData
+                    li
+                        a(href="#" + data.id)= data.title
+    .links-wrapper
+        +links(groupsData)
+    .groups-wrapper
+        +groups(groupsData)
+
+    footer
+        a(href="#") В начало
